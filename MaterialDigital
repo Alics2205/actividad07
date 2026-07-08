@@ -1,0 +1,20 @@
+public class MaterialDigital {
+
+    private double tamanioArchivo;
+
+    public MaterialDigital() {
+    }
+
+    public MaterialDigital(double tamanioArchivo) {
+        this.tamanioArchivo = tamanioArchivo;
+    }
+
+    public double getTamanioArchivo() {
+        return tamanioArchivo;
+    }
+
+    public void setTamanioArchivo(double tamanioArchivo) {
+        this.tamanioArchivo = tamanioArchivo;
+    }
+
+}
