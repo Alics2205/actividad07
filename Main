@@ -2,73 +2,71 @@ public class Main {
 
     public static void main(String[] args) {
 
-        Manga manga1 = new Manga(
+        Manga m1 = new Manga(
                 "Naruto",
                 "Masashi Kishimoto",
                 5,
                 0,
                 1,
-                "Masashi Kishimoto");
+                "Masashi Kishimoto"
+        );
 
-        Manga manga2 = new Manga(
+        Manga m2 = new Manga(
                 "One Piece",
                 "Eiichiro Oda",
                 3,
                 0,
                 105,
-                "Eiichiro Oda");
+                "Eiichiro Oda"
+        );
 
-        AudioLibro audio1 = new AudioLibro(
+        AudioLibro a1 = new AudioLibro(
                 "El Principito",
-                "Antoine de Saint-Exupéry",
+                "Antoine de Saint-Exupery",
                 4,
                 0,
                 180,
-                "Juan Pérez");
+                "Juan Perez"
+        );
 
-        AudioLibro audio2 = new AudioLibro(
+        AudioLibro a2 = new AudioLibro(
                 "1984",
                 "George Orwell",
                 2,
                 0,
                 500,
-                "María Gómez");
+                "Maria Gomez"
+        );
 
-        // Préstamos
+        m1.prestamo();
+        m1.prestamo();
 
-        manga1.prestamo();
-        manga1.prestamo();
+        m2.prestamo();
 
-        manga2.prestamo();
+        a1.prestamo();
 
-        audio1.prestamo();
+        a2.prestamo();
+        a2.devolucion();
 
-        audio2.prestamo();
-        audio2.devolucion();
+        a1.setNarrador("Carlos Lopez");
 
-        // Uso de Setter
-
-        audio1.setNarrador("Carlos López");
-
-        // Mostrar resultados
-
-        System.out.println("====== MANGA 1 ======");
-        System.out.println(manga1);
+        System.out.println("Manga 1");
+        System.out.println(m1);
 
         System.out.println();
 
-        System.out.println("====== MANGA 2 ======");
-        System.out.println(manga2);
+        System.out.println("Manga 2");
+        System.out.println(m2);
 
         System.out.println();
 
-        System.out.println("====== AUDIOLIBRO 1 ======");
-        System.out.println(audio1);
+        System.out.println("Audiolibro 1");
+        System.out.println(a1);
 
         System.out.println();
 
-        System.out.println("====== AUDIOLIBRO 2 ======");
-        System.out.println(audio2);
+        System.out.println("Audiolibro 2");
+        System.out.println(a2);
 
     }
 
