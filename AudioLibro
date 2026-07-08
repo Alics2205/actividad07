@@ -1,0 +1,53 @@
+public final class AudioLibro extends Libro {
+
+    private int duracion;
+    private String narrador;
+
+    // Constructor por defecto
+    public AudioLibro() {
+    }
+
+    // Constructor con parámetros
+    public AudioLibro(String titulo, String autor, int ejemplares, int prestados,
+                      int duracion, String narrador) {
+
+        super(titulo, autor, ejemplares, prestados);
+
+        this.duracion = duracion;
+        this.narrador = narrador;
+    }
+
+    // Constructor copia
+    public AudioLibro(AudioLibro a) {
+
+        super(a);
+
+        this.duracion = a.duracion;
+        this.narrador = a.narrador;
+    }
+
+    public int getDuracion() {
+        return duracion;
+    }
+
+    public void setDuracion(int duracion) {
+        this.duracion = duracion;
+    }
+
+    public String getNarrador() {
+        return narrador;
+    }
+
+    public void setNarrador(String narrador) {
+        this.narrador = narrador;
+    }
+
+    @Override
+    public String toString() {
+
+        return super.toString() +
+                "\nDuracion: " + duracion + " minutos" +
+                "\nNarrador: " + narrador;
+    }
+
+}
