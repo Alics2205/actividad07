@@ -1,0 +1,75 @@
+public class Main {
+
+    public static void main(String[] args) {
+
+        Manga manga1 = new Manga(
+                "Naruto",
+                "Masashi Kishimoto",
+                5,
+                0,
+                1,
+                "Masashi Kishimoto");
+
+        Manga manga2 = new Manga(
+                "One Piece",
+                "Eiichiro Oda",
+                3,
+                0,
+                105,
+                "Eiichiro Oda");
+
+        AudioLibro audio1 = new AudioLibro(
+                "El Principito",
+                "Antoine de Saint-Exupéry",
+                4,
+                0,
+                180,
+                "Juan Pérez");
+
+        AudioLibro audio2 = new AudioLibro(
+                "1984",
+                "George Orwell",
+                2,
+                0,
+                500,
+                "María Gómez");
+
+        // Préstamos
+
+        manga1.prestamo();
+        manga1.prestamo();
+
+        manga2.prestamo();
+
+        audio1.prestamo();
+
+        audio2.prestamo();
+        audio2.devolucion();
+
+        // Uso de Setter
+
+        audio1.setNarrador("Carlos López");
+
+        // Mostrar resultados
+
+        System.out.println("====== MANGA 1 ======");
+        System.out.println(manga1);
+
+        System.out.println();
+
+        System.out.println("====== MANGA 2 ======");
+        System.out.println(manga2);
+
+        System.out.println();
+
+        System.out.println("====== AUDIOLIBRO 1 ======");
+        System.out.println(audio1);
+
+        System.out.println();
+
+        System.out.println("====== AUDIOLIBRO 2 ======");
+        System.out.println(audio2);
+
+    }
+
+}
