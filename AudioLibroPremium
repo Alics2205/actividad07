@@ -1,1 +1,7 @@
 AudioLibroPremium
+// no se puede por como la clase esta declarada como una clase final y estas no pueden tener clases hijas 
+/*
+public class AudioLibroPremium extends AudioLibro {
+
+}
+*/
