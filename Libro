@@ -5,7 +5,6 @@ public class Libro {
     private int ejemplares;
     private int prestados;
 
-    // Constructor por defecto
     public Libro() {
     }
 
