@@ -1,7 +1,42 @@
-AudioLibroPremium
-// no se puede por como la clase esta declarada como una clase final y estas no pueden tener clases hijas 
-/*
-public class AudioLibroPremium extends AudioLibro {
+package acti7;
 
+public class AudiolibroPremium {
+
+/*
+  no se puede porque audiolibro es final y no puede ser heredada
+  public class audiolibroPremium extends audiolibro {
+  
+  private String calidadAudio; private boolean accesoOffline;
+  
+  public audiolibroPremium() { super(); }
+  
+  public audiolibroPremium(String titulo, String autor, int ejemplares, int
+  prestados, int duracion, String narrador, String calidadAudio, boolean
+  accesoOffline) {
+  
+  super(titulo, autor, ejemplares, prestados, duracion, narrador);
+  
+  this.calidadAudio = calidadAudio; this.accesoOffline = accesoOffline; }
+  
+  public audiolibroPremium(audiolibroPremium a) { super(a);
+  
+  this.calidadAudio = a.calidadAudio; this.accesoOffline = a.accesoOffline; }
+  
+  public String getCalidadAudio() { return calidadAudio; }
+  
+  public void setCalidadAudio(String calidadAudio) { this.calidadAudio =
+  calidadAudio; }
+  
+  public boolean isAccesoOffline() { return accesoOffline; }
+  
+  public void setAccesoOffline(boolean accesoOffline) { this.accesoOffline =
+  accesoOffline; }
+  
+  @Override public String toString() { return super.toString() +
+  "\nCalidad de audio: " + calidadAudio + "\nAcceso offline: " + accesoOffline;
+  } }
+  
+  
+ */
+	
 }
-*/
