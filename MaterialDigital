@@ -1,13 +1,18 @@
 public class MaterialDigital {
 
+    // Tamaño del archivo digital
     private double tamanioArchivo;
 
+    // Constructor vacío
     public MaterialDigital() {
     }
 
+    // Constructor con parámetros
     public MaterialDigital(double tamanioArchivo) {
         this.tamanioArchivo = tamanioArchivo;
     }
+
+    // Getters y Setters
 
     public double getTamanioArchivo() {
         return tamanioArchivo;
